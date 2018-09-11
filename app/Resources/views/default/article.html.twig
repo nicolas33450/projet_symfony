@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %} Article {% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+
+           {{dump(reponse)}}
+
+           {{reponse.title}}<br>
+           <img src="http://image.tmdb.org/t/p/original/{{reponse.poster_path}}" alt="" class="w-50 mb-5"><br>
+           {{reponse.overview}}
+         </div>
+
+    </div>
+</div>
+
+{% endblock %}

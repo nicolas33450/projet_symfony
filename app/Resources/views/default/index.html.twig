@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+
+
+{% block body %}
+
+<div class="container">    
+    <div class="row">
+        <div class="col-12 text-center">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut omnis dolore quis, corporis voluptatibus
+                harum, voluptatum possimus unde expedita esse sit impedit magni, voluptas voluptate doloribus tempore
+                explicabo modi ipsa.
+            </p>
+            <a href="{{path('test')}}"> Clique ICI </a>
+        </div>
+        <div class="col-12 text-center">
+            <img src="{{asset('image/nain.png')}}" alt="nain" class=" mt-5 w-50">
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block stylesheets %}
+{{parent()}}
+{% endblock %}
